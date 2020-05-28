@@ -5,13 +5,17 @@ export default createTheme({
     pageBackgroundColor: 'white',
     textColor: 'black',
     borderColor: 'black',
+    panelBorderColor: 'gray',
     lighterBorderColor: 'gray',
+    panelColor: 'gray',
   },
   dark: {
     pageBackgroundColor: '#171717',
     textColor: '#dcdcdc',
     borderColor: '#dcdcdc',
+    panelBorderColor: '#5a5a5a',
     lighterBorderColor: '#717171',
+    panelColor: '#353535',
   },
   COMMON: {
     fontSizes: {

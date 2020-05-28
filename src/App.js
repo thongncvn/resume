@@ -4,9 +4,12 @@ import ExperiencesList from './components/ExperiencesList';
 import {getThemeValue as $} from './libs/theme';
 import ThemeProvider from './libs/theme/ThemeProvider';
 import theme from './theme';
+import Commands from './components/Commands';
 
 const GlobalStyle = createGlobalStyle`
   html, body {
+    padding: 0;
+    margin: 0;
     background-color: ${$('pageBackgroundColor')};
     color: ${$('textColor')};
     font-family: ${$('fontFamily')};
@@ -55,6 +58,12 @@ const SectionTitle = styled.div`
 
 const Content = styled.div`
   padding: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 900px) {
+    max-width: 100vw;
+  }
 
   ${Section} + ${Section} {
     border-top: 1px solid ${$('lighterBorderColor')};
@@ -72,6 +81,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
+      <Commands />
       <Content>
         <Header>
           <Brief>
