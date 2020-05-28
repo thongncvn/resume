@@ -1,0 +1,33 @@
+import {createTheme} from './libs/theme/helpers';
+
+export default createTheme({
+  light: {
+    pageBackgroundColor: 'white',
+    textColor: 'black',
+    borderColor: 'black',
+    lighterBorderColor: 'gray',
+  },
+  dark: {
+    pageBackgroundColor: '#171717',
+    textColor: '#dcdcdc',
+    borderColor: '#dcdcdc',
+    lighterBorderColor: '#717171',
+  },
+  COMMON: {
+    fontSizes: {
+      small: '13px',
+      regular: '16px',
+      header: '22px',
+      title: '40px',
+    },
+    fontWeights: {
+      light: 300,
+      regular: 400,
+      bold: 600,
+    },
+    fontFamily: "'Source Sans Pro', sans-serif",
+  },
+  meta: {
+    default: 'dark',
+  },
+});
