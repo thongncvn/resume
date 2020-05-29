@@ -5,6 +5,13 @@ import {getThemeValue as $} from './libs/theme';
 import ThemeProvider from './libs/theme/ThemeProvider';
 import theme from './theme';
 import Commands from './components/Commands';
+import WebFont from 'webfontloader';
+
+WebFont.load({
+  google: {
+    families: ['Source Sans Pro:300,400,600', 'sans-serif'],
+  },
+});
 
 const GlobalStyle = createGlobalStyle`
   html, body {
