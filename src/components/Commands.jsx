@@ -20,7 +20,7 @@ const ChangeThemeButton = styled.button`
 
 const DownloadButton = styled.a`
   margin-left: 8px;
-  color: ${({mode}) => (mode === 'light' ? 'black' : 'white')};
+  color: white;
 `;
 
 const Commands = () => {
@@ -41,7 +41,7 @@ const Commands = () => {
       </ChangeThemeButton>
       <DownloadButton
         mode={mode}
-        href="/Resume.light.pdf"
+        href="/thongncvn.resume.pdf"
         rel="noopenner noreferrer"
         target="_blank"
       >

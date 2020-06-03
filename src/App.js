@@ -133,14 +133,14 @@ function App() {
                     <Fragment>
                       <strong>React Developer</strong>
                       <p>
-                        Joined design and development of a system to manage
+                        - Joined design and development of a system to manage
                         proprietary documents of mining enterprises, which
                         allowed users to upload directories with more than
                         10,000 files simultaneously.
                       </p>
                       <p>
-                        Took the consultant role to help the client gets used to
-                        working with an Agile team in an efficient manner.
+                        - Took the consultant role to help the client gets used
+                        to working with an Agile team in an efficient manner.
                       </p>
                     </Fragment>
                   ),
@@ -161,15 +161,15 @@ function App() {
                     <Fragment>
                       <strong>React Developer</strong>
                       <p>
-                        Maintain the front-end part of RealStake app using
+                        - Maintain the front-end part of RealStake app using
                         React.
                       </p>
                       <p>
-                        Closely worked with the designer team to assess
+                        - Closely worked with the designer team to assess
                         technical feasibility.
                       </p>
                       <p>
-                        Consulted on applying Extreme Programming to the
+                        - Consulted on applying Extreme Programming to the
                         client&apos;s team in order to deliver within tight
                         deadline while stil keep the developers happy.
                       </p>
@@ -184,27 +184,23 @@ function App() {
                     <Fragment>
                       <strong>Full Stack Developer</strong>
                       <p>
-                        <i>
-                          Swememo is an online platform to connect photographers
-                          and their potential clients.
-                        </i>
+                        - Swememo is an online platform to connect photographers
+                        and their potential clients.
                       </p>
                       <p>
-                        Lead the development and maintain Swememo&apos;s web
+                        - Lead the development and maintain Swememo&apos;s web
                         application.
                       </p>
                       <p>
-                        Took the trainer role to help new team members
+                        - Took the trainer role to help new team members
                         collaborate on the project with Ruby on Rails.
                       </p>
                       <p>
-                        <i>
-                          <div>
-                            Learned various skills related to a product&apos;s
-                            lifecycle. Together we brought the product to{' '}
-                            Echelon Asia Summit in Singapore.
-                          </div>
-                        </i>
+                        <div>
+                          - Learned various skills related to a product&apos;s
+                          lifecycle. Together we brought the product to Echelon
+                          Asia Summit in Singapore.
+                        </div>
                       </p>
                     </Fragment>
                   ),
@@ -217,14 +213,12 @@ function App() {
                     <Fragment>
                       <strong>Full Stack Developer</strong>
                       <p>
-                        Joined development of client projects under supervision
-                        of one of EA&apos;s project managers.
+                        - Joined development of client projects under
+                        supervision of one of EA&apos;s project managers.
                       </p>
                       <p>
-                        <i>
-                          Learned to apply TDD, BDD, Extreme Programming and
-                          started Web Development.
-                        </i>
+                        - Learned to apply TDD, BDD, Extreme Programming and
+                        started Web Development.
                       </p>
                     </Fragment>
                   ),
@@ -293,14 +287,35 @@ function App() {
         <Section>
           <SectionTitle>EXPERTISE</SectionTitle>
           <ExpertiseContent>
-            <div>React</div>
-            <div>Ruby on Rails</div>
-            <div>Node</div>
-            <div>Docker</div>
-            <div>AWS</div>
-            <div>*nix</div>
+            <div>
+              <strong>Technical</strong>
+              <div>React</div>
+              <div>Ruby on Rails</div>
+              <div>Node</div>
+            </div>
+            <div>
+              <div>&nbsp;</div>
+              <div>Docker</div>
+              <div>AWS</div>
+              <div>*nix</div>
+            </div>
+            <div>
+              <div>&nbsp;</div>
+              <div>PostgreSQL</div>
+              <div>GraphQL</div>
+              <div>MongoDB</div>
+            </div>
+            <div>
+              <div>&nbsp;</div>
+              <div>Selenium</div>
+              <div>Express</div>
+            </div>
+            <div>
+              <strong>On my way</strong>
+              <div>Machine Learning</div>
+              <div>Big Data</div>
+            </div>
           </ExpertiseContent>
-          <p>I&apos;m also working to add Machine Learning to this list.</p>
         </Section>
       </Content>
     </ThemeProvider>

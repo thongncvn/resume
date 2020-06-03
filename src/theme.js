@@ -3,8 +3,8 @@ import {createTheme} from './libs/theme/helpers';
 export default createTheme({
   light: {
     pageBackgroundColor: 'white',
-    textColor: 'black',
-    borderColor: 'black',
+    textColor: '#383838',
+    borderColor: '#383838',
     panelBorderColor: 'gray',
     lighterBorderColor: 'gray',
     panelColor: 'gray',
