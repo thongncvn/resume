@@ -13,6 +13,11 @@ WebFont.load({
   },
 });
 
+const PlainLink = styled.a`
+  color: inherit;
+  text-decoration: none;
+`;
+
 const GlobalStyle = createGlobalStyle`
   html, body {
     padding: 0;
@@ -96,12 +101,22 @@ function App() {
               <div>THỐNG</div>
               <div>NGUYỄN CAO</div>
             </Name>
-            <Title>WEB DEVELOPER</Title>
+            <Title>DEVELOPER</Title>
           </Brief>
           <Contact>
-            <div>+84 988 195 159</div>
-            <div>thong.nguyencao.vn@gmail.com</div>
-            <div>www.thongncvn.com</div>
+            <div>
+              <PlainLink href="tel:84988195159">+84 988 195 159</PlainLink>
+            </div>
+            <div>
+              <PlainLink href="mailto:thong.nguyencao.vn@gmail.com">
+                thong.nguyencao.vn@gmail.com
+              </PlainLink>
+            </div>
+            <div>
+              <PlainLink href="https://www.thongncvn.com">
+                www.thongncvn.com
+              </PlainLink>
+            </div>
           </Contact>
         </Header>
 
@@ -117,28 +132,47 @@ function App() {
                   content: (
                     <Fragment>
                       <strong>React Developer</strong>
-                      <div>
+                      <p>
                         Joined design and development of a system to manage
                         proprietary documents of mining enterprises, which
                         allowed users to upload directories with more than
                         10,000 files simultaneously.
-                      </div>
+                      </p>
+                      <p>
+                        Took the consultant role to help the client gets used to
+                        working with an Agile team in an efficient manner.
+                      </p>
                     </Fragment>
                   ),
                 },
                 {
                   id: '2',
-                  name: 'RealStake (East Agile)',
+                  name: (
+                    <PlainLink
+                      href="https://realstake.net/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      RealStake (East Agile)
+                    </PlainLink>
+                  ),
                   time: '2018 - 2020',
                   content: (
                     <Fragment>
                       <strong>React Developer</strong>
-                      <div>
-                        Responsibilities included building the front-end part of
-                        RealStake app with <strong>React</strong> and consulting
-                        on applying <strong>Extreme Programming</strong> to the
-                        client's team.
-                      </div>
+                      <p>
+                        Maintain the front-end part of RealStake app using
+                        React.
+                      </p>
+                      <p>
+                        Closely worked with the designer team to assess
+                        technical feasibility.
+                      </p>
+                      <p>
+                        Consulted on applying Extreme Programming to the
+                        client&apos;s team in order to deliver within tight
+                        deadline while stil keep the developers happy.
+                      </p>
                     </Fragment>
                   ),
                 },
@@ -148,24 +182,30 @@ function App() {
                   time: '2016 - 2018',
                   content: (
                     <Fragment>
-                      <strong>Ruby on Rails Developer</strong>
-                      <div>
-                        <strong>Swememo</strong> is an online platform to
-                        connect photographers and their potential clients.
-                      </div>
-                      <div>
-                        I help building and maintaining Swememo's web
+                      <strong>Full Stack Developer</strong>
+                      <p>
+                        <i>
+                          Swememo is an online platform to connect photographers
+                          and their potential clients.
+                        </i>
+                      </p>
+                      <p>
+                        Lead the development and maintain Swememo&apos;s web
                         application.
-                      </div>
-                      <div>
+                      </p>
+                      <p>
+                        Took the trainer role to help new team members
+                        collaborate on the project with Ruby on Rails.
+                      </p>
+                      <p>
                         <i>
                           <div>
-                            Learned various skills related to a product's
+                            Learned various skills related to a product&apos;s
                             lifecycle. Together we brought the product to{' '}
-                            <strong>Echelon Asia Summit</strong> in Singapore.
+                            Echelon Asia Summit in Singapore.
                           </div>
                         </i>
-                      </div>
+                      </p>
                     </Fragment>
                   ),
                 },
@@ -175,19 +215,17 @@ function App() {
                   time: '2016',
                   content: (
                     <Fragment>
-                      <strong>Ruby on Rails Developer</strong>
-                      <div>
-                        Joined the development of client projects under
-                        supervision of one of EA's project managers.
-                      </div>
-                      <div>
+                      <strong>Full Stack Developer</strong>
+                      <p>
+                        Joined development of client projects under supervision
+                        of one of EA&apos;s project managers.
+                      </p>
+                      <p>
                         <i>
-                          Learned to apply <strong>TDD</strong>,{' '}
-                          <strong>BDD</strong>,{' '}
-                          <strong>Extreme Programming</strong> and started{' '}
-                          <strong>Web Development</strong>.
+                          Learned to apply TDD, BDD, Extreme Programming and
+                          started Web Development.
                         </i>
-                      </div>
+                      </p>
                     </Fragment>
                   ),
                 },
@@ -197,20 +235,55 @@ function App() {
         </Section>
 
         <Section>
-          <SectionTitle>EDUCATION & AWARD</SectionTitle>
+          <SectionTitle>EDUCATION, TRAINING & AWARD</SectionTitle>
           <SectionContent>
             <ExperiencesList
               hasContent={false}
               items={[
                 {
-                  id: '0',
-                  name: 'Vietnam Olympiad in Informatics - Bronze Medal',
-                  time: '2013',
+                  id: '2',
+                  name: (
+                    <PlainLink
+                      href="https://developers.google.com/machine-learning/crash-course"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Google Machine Learning Crash Course
+                    </PlainLink>
+                  ),
+                  time: '2020',
                 },
                 {
                   id: '1',
-                  name: 'FPT University',
+                  name: (
+                    <PlainLink
+                      href="https://hcmuni.fpt.edu.vn/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      FPT University
+                    </PlainLink>
+                  ),
                   time: '2018',
+                },
+                {
+                  id: '3',
+                  name: (
+                    <PlainLink
+                      href="https://daihoc.fpt.edu.vn/doi-apidez-gianh-giai-nhat-cuoc-thi-lap-trinh-ung-dung-android/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      FPT&apos;s Android Application Programming Contest - First
+                      Prize
+                    </PlainLink>
+                  ),
+                  time: '2016',
+                },
+                {
+                  id: '0',
+                  name: 'Vietnam Olympiad in Informatics - Bronze Medal',
+                  time: '2013',
                 },
               ]}
             />
@@ -227,6 +300,7 @@ function App() {
             <div>AWS</div>
             <div>*nix</div>
           </ExpertiseContent>
+          <p>I&apos;m also working to add Machine Learning to this list.</p>
         </Section>
       </Content>
     </ThemeProvider>

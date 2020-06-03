@@ -32,6 +32,6 @@ export default createTheme({
     fontFamily: "'Source Sans Pro', sans-serif",
   },
   meta: {
-    default: 'dark',
+    default: 'light',
   },
 });

@@ -23,6 +23,11 @@ const Time = styled.div`
 
 const Content = styled.div`
   text-align: justify;
+
+  p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
 `;
 
 const ExperiencesList = ({hasContent = true, items}) => {

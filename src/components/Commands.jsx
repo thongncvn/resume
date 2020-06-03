@@ -12,10 +12,15 @@ const Root = styled.div`
 `;
 
 const ChangeThemeButton = styled.button`
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: 5px;
+`;
+
+const DownloadButton = styled.a`
+  margin-left: 8px;
+  color: ${({mode}) => (mode === 'light' ? 'black' : 'white')};
 `;
 
 const Commands = () => {
@@ -34,6 +39,14 @@ const Commands = () => {
       <ChangeThemeButton onClick={onChangeTheme}>
         {mode === 'light' ? <FiSun /> : <FiMoon />}
       </ChangeThemeButton>
+      <DownloadButton
+        mode={mode}
+        href="/Resume.light.pdf"
+        rel="noopenner noreferrer"
+        target="_blank"
+      >
+        Download as PDF
+      </DownloadButton>
     </Root>
   );
 };
