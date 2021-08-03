@@ -10,7 +10,8 @@ const Root = styled.ul`
 
 const WhereAndWhen = styled.div`
   width: calc(100% - 14px);
-  margin-left: 14px;
+  margin-left: 11px;
+  padding-top: 7px;
 `;
 
 const Name = styled.li`
@@ -24,26 +25,45 @@ const Time = styled.div`
 const Content = styled.div`
   text-align: justify;
 
+  .title {
+    margin-bottom: 10px;
+    font-size: 120%;
+  }
+
   p {
     margin-top: 5px;
     margin-bottom: 5px;
+  }
+
+  li {
+    font-size: 90%;
+    list-style: none;
+    &:before {
+      content: '-';
+      margin-right: 4px;
+    }
+  }
+
+  i {
+    font-size: 75%;
+    line-height: 15px;
   }
 `;
 
 const ExperiencesList = ({hasContent = true, items}) => {
   return (
     <Root>
-      <Grid columns={3}>
+      <Grid columns={5}>
         {items.map(({id, name, time, content}) => (
           <Fragment key={id}>
-            <Cell width={hasContent ? 1 : 3}>
+            <Cell width={hasContent ? 1 : 5}>
               <WhereAndWhen>
                 <Name>{name}</Name>
                 <Time>{time}</Time>
               </WhereAndWhen>
             </Cell>
             {hasContent && (
-              <Cell width={2}>
+              <Cell width={4}>
                 <Content>{content}</Content>
               </Cell>
             )}

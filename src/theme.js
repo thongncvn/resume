@@ -29,7 +29,7 @@ export default createTheme({
       regular: 400,
       bold: 600,
     },
-    fontFamily: "'Source Sans Pro', sans-serif",
+    fontFamily: "'JetBrains Mono', sans-serif",
   },
   meta: {
     default: 'light',

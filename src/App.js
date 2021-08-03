@@ -1,7 +1,7 @@
-import React, {Fragment} from 'react';
-import styled, {createGlobalStyle} from 'styled-components';
+import React, { Fragment } from 'react';
+import styled, { createGlobalStyle } from 'styled-components';
 import ExperiencesList from './components/ExperiencesList';
-import {getThemeValue as $} from './libs/theme';
+import { getThemeValue as $ } from './libs/theme';
 import ThemeProvider from './libs/theme/ThemeProvider';
 import theme from './theme';
 import Commands from './components/Commands';
@@ -9,7 +9,7 @@ import WebFont from 'webfontloader';
 
 WebFont.load({
   google: {
-    families: ['Source Sans Pro:300,400,600', 'sans-serif'],
+    families: ['JetBrains Mono:300,400,600', 'sans-serif'],
   },
 });
 
@@ -28,6 +28,10 @@ const GlobalStyle = createGlobalStyle`
     font-size: ${$('fontSizes.regular')};
     font-weight: ${$('fontWeights.light')};
     letter-spacing: 0.5px;
+  }
+
+  b {
+    font-weight: 700;
   }
 `;
 
@@ -112,36 +116,40 @@ function App() {
                 thong.nguyencao.vn@gmail.com
               </PlainLink>
             </div>
-            <div>
-              <PlainLink href="https://www.thongncvn.com">
-                www.thongncvn.com
-              </PlainLink>
-            </div>
           </Contact>
         </Header>
+        <span style={{top: -20, position: 'relative', fontSize: '75%', color: '#00000055'}}>Work smart, work reliably.</span>
 
         <Section>
-          <SectionTitle>WORK EXPERIENCES</SectionTitle>
+          <SectionTitle>EXPERIENCES</SectionTitle>
           <SectionContent>
             <ExperiencesList
               items={[
                 {
+                  id: '4',
+                  name: 'Infina',
+                  time: '2020 - now',
+                  content: (
+                    <Fragment>
+                      <p><b class="title">Senior React Native Developer</b></p>
+                      <li>Build the Infina mobile app.</li>
+                      <li>Develop a strong team of <b>React Native</b> developers.</li>
+                      <li>Maintain team processes to efficiently work under pressure.</li>
+                      <p style={{ fontSize: '85%', color: '#00000055' }}><span>Chaos is better managed than being taken as an excuse.</span></p>
+                    </Fragment>
+                  ),
+                },
+                {
                   id: '3',
-                  name: 'Minito (East Agile)',
+                  name: 'Minito',
                   time: '2018 - 2020',
                   content: (
                     <Fragment>
-                      <strong>React Developer</strong>
-                      <p>
-                        - Joined design and development of a system to manage
-                        proprietary documents of mining enterprises, which
-                        allowed users to upload directories with more than
-                        10,000 files simultaneously.
-                      </p>
-                      <p>
-                        - Took the consultant role to help the client gets used
-                        to working with an Agile team in an efficient manner.
-                      </p>
+                      <p><b class="title">Senior ReactJS Developer</b></p>
+                      <li>Participate in the conceptual design of the Minito system.</li>
+                      <li>Develop the web app with <b>ReactJS</b>.</li>
+                      <li>Consulted the client on applying <b>Agile methodologies</b>.</li>
+                      <p style={{ fontSize: '85%', color: '#00000055' }}><span>We will always know if something can be done or not.</span></p>
                     </Fragment>
                   ),
                 },
@@ -153,26 +161,17 @@ function App() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      RealStake (East Agile)
+                      RealStake
                     </PlainLink>
                   ),
                   time: '2018 - 2020',
                   content: (
                     <Fragment>
-                      <strong>React Developer</strong>
-                      <p>
-                        - Maintain the front-end part of RealStake app using
-                        React.
-                      </p>
-                      <p>
-                        - Closely worked with the designer team to assess
-                        technical feasibility.
-                      </p>
-                      <p>
-                        - Consulted on applying Extreme Programming to the
-                        client&apos;s team in order to deliver within tight
-                        deadline while stil keep the developers happy.
-                      </p>
+                      <p><b class="title">ReactJS Developer</b></p>
+                      <li>Maintained the web app of RealStake using <b>ReactJS</b>.</li>
+                      <li>Worked with the product team to assess technical feasibility.</li>
+                      <li>Consulted on applying <b>Extreme Programming</b> to the client&apos;s team in order to deliver within tight deadline while still keep the developers happy.</li>
+                      <p style={{ fontSize: '85%', color: '#00000055' }}><span>A friendly and professional working environment has huge benefit on both personal and business development.</span></p>
                     </Fragment>
                   ),
                 },
@@ -182,26 +181,12 @@ function App() {
                   time: '2016 - 2018',
                   content: (
                     <Fragment>
-                      <strong>Full Stack Developer</strong>
-                      <p>
-                        - Swememo is an online platform to connect photographers
-                        and their potential clients.
-                      </p>
-                      <p>
-                        - Lead the development and maintain Swememo&apos;s web
-                        application.
-                      </p>
-                      <p>
-                        - Took the trainer role to help new team members
-                        collaborate on the project with Ruby on Rails.
-                      </p>
-                      <p>
-                        <div>
-                          - Learned various skills related to a product&apos;s
-                          lifecycle. Together we brought the product to Echelon
-                          Asia Summit in Singapore.
-                        </div>
-                      </p>
+                      <p><b class="title">Full Stack Developer</b></p>
+                      <li>Lead the development of Swememo&apos;s web application.</li>
+                      <li>Built and maintained a <b>Ruby on Rails</b> team.</li>
+                      <li>Learned various skills related to a product&apos;s lifecycle.</li>
+                      <p style={{ fontSize: '85%', color: '#00000055' }}><span>Together we brought Swememo to Echelon Asia Summit 2018 in Singapore.</span></p>
+                      <br />
                     </Fragment>
                   ),
                 },
@@ -211,15 +196,10 @@ function App() {
                   time: '2016',
                   content: (
                     <Fragment>
-                      <strong>Full Stack Developer</strong>
-                      <p>
-                        - Joined development of client projects under
-                        supervision of one of EA&apos;s project managers.
-                      </p>
-                      <p>
-                        - Learned to apply TDD, BDD, Extreme Programming and
-                        started Web Development.
-                      </p>
+                      <p><b class="title">Full Stack Developer</b></p>
+                      <li>Developed a client projects under supervision of one of EA&apos;s project managers.</li>
+                      <li>Learned <b>TDD</b>, <b>BDD</b>, <b>Extreme Programming</b> and started my career with <b>Ruby on Rails</b>.</li>
+                      <p style={{ fontSize: '85%', color: '#00000055' }}><span>Testing is a must, or we actually don't care at all about our product.</span></p>
                     </Fragment>
                   ),
                 },
@@ -234,19 +214,6 @@ function App() {
             <ExperiencesList
               hasContent={false}
               items={[
-                {
-                  id: '2',
-                  name: (
-                    <PlainLink
-                      href="https://developers.google.com/machine-learning/crash-course"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Google Machine Learning Crash Course
-                    </PlainLink>
-                  ),
-                  time: '2020',
-                },
                 {
                   id: '1',
                   name: (
@@ -282,40 +249,6 @@ function App() {
               ]}
             />
           </SectionContent>
-        </Section>
-
-        <Section>
-          <SectionTitle>EXPERTISE</SectionTitle>
-          <ExpertiseContent>
-            <div>
-              <strong>Technical</strong>
-              <div>React</div>
-              <div>Ruby on Rails</div>
-              <div>Node</div>
-            </div>
-            <div>
-              <div>&nbsp;</div>
-              <div>Docker</div>
-              <div>AWS</div>
-              <div>*nix</div>
-            </div>
-            <div>
-              <div>&nbsp;</div>
-              <div>PostgreSQL</div>
-              <div>GraphQL</div>
-              <div>MongoDB</div>
-            </div>
-            <div>
-              <div>&nbsp;</div>
-              <div>Selenium</div>
-              <div>Express</div>
-            </div>
-            <div>
-              <strong>On my way</strong>
-              <div>Machine Learning</div>
-              <div>Big Data</div>
-            </div>
-          </ExpertiseContent>
         </Section>
       </Content>
     </ThemeProvider>
