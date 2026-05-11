@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.resume-content {
+  p { margin-block: 5px; }
+  li {
+    font-size: 90%;
+    list-style: none;
+    &::before { content: "-"; margin-right: 4px; }
+  }
+  .job-title {
+    font-size: 120%;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+}
